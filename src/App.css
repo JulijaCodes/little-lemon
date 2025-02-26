@@ -1,38 +1,331 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@500&display=swap');
+
+body {
+  font-family: "Karla", sans-serif;
+  line-height: 1.7em;
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAF5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 19px;
+  font-weight: 500;
+  color:#FAFAF5; 
+}
+
+.logo {
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edefee;
+  padding: 30px 100px 30px 100px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav ul li {
+  margin: 0 14px;
+}
+
+.nav ul li a {
+  color: #495E57;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.nav ul li a:hover {
+  color: #F4CE14;
+}
+
+.main {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  column-gap: 2em;
+  background:#edefee;
+  padding: 55px;
+  border-radius: 16px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: left;
+}
+
+.hero-image {
+  width: 100%;
+  min-width: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+
+.subheading {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 40ch;
+}
+
+.hero button {
+  background: #495E57;
+  color: white;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+.hero button:hover {
+  background: #F4CE14;
+  color: #333;
+}
+
+.specials {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.specials-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.special-item {
+  background: white;
+  padding: 0px;
+  border-radius: 16px;
+  width: 500px;
+}
+
+.special-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.special-text {
+  padding:20px;
+}
+
+.special-name-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.price {
+  color: red;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.specials button {
+  background: #495E57;
+  color: white;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+.specials button:hover {
+  background: #F4CE14;
+  color: #333;
+}
+
+.heading-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonials {
+  background: #495E57;
+  border-radius: 16px;
+  padding: 55px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.testimonials h2{
+  color: white;
   text-align: center;
+  margin-bottom: 2em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.testimonial {
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.guest-name {
+  font-family: "Markazi Text", serif;
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2em;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.about p {
+  max-width: 50ch;
+}
+
+.about-images {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.about-images img:first-child {
+  grid-column: span 2;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.about-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  background: #222;
   color: white;
+  padding: 40px;
+  text-align: left;
+  align-items: start;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-logo img {
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #F4CE14;
+}
+
+.footer-address p {
+  margin: 3px 0;
+}
+
+.footer-social a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer-social a:hover {
+  color: #F4CE14;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .footer-social a {
+    display: inline-block;
+    margin: 0 10px;
   }
+}
+
+.booking-page {
+  margin: 80px 100px 80px 100px;
 }
